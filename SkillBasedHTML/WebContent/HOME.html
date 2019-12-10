@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home page</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: CadetBlue;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: CadetBlue;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+  font-color:black;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: CadetBlue;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: CadetBlue;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <!--
+<h2>Feel at home  </h2>
+<p>Be kind to each other</p>
+<p>Love is our melody..... </p>
+-->
+<header>
+  <h2>Yvette's Kitchen</h2>
+</header>
+
+<section >
+  <nav>
+    <ul >
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Reservation</a></li>
+      <li><a href="#">Review</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Our Philosophy</h1>
+    <p>Growing up i learned life's important lesson at dinner table</p>
+    <p> U don't need silver folk to eat good food, Try, Eat and listen...all you need is love, love of the food </p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
